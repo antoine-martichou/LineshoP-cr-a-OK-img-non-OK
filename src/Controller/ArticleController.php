@@ -34,9 +34,7 @@ class ArticleController extends AbstractController
     public function showCate($id)
     {
         $repo = $this->getDoctrine()->getRepository(Articles::class);
-        $articles= $repo->findBy(array(
-            'idcategory' => $id), array('idcategory' => 'desc')
-        );
+        $articles= $repo->findBy(array('idcategory' =>$id));
        
          return $this->render('category/index.html.twig', [
              'articles' => $articles,
