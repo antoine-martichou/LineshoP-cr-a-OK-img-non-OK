@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création d'article!{% endblock %}
+
+{% block body %}
+
+    <div class="container mb-5">
+        {{ form_start(form)}}
+            {{ form_row(form.namearticle,{'label':"Titre de l'article"}) }}
+            {{ form_row(form.image,{'attr':{'placeholder':"Votre image"}}) }}
+            {{ form_row(form.description) }}
+            {{ form_row(form.price,{'label':"Prix en €"}) }}
+            {{ form_row(form.type) }}
+            {{ form_row(form.idcategory,{'label':"Catégorie"}) }}
+            {{ form_row(form.envoyer,{'attr':{'class':"btn btn-md   lienCate"}}) }}
+        {{ form_end(form) }}
+
+    </div>
+{% endblock %}

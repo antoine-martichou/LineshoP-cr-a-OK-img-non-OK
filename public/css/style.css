@@ -1,0 +1,204 @@
+/** HEADER **/
+nav
+{    
+    color: whitesmoke;
+    
+}
+#titre-phrase
+{
+    display: flex;
+    flex-direction: row;
+}
+.phrase
+{
+    margin-left: 10px;
+    padding-top: 8px;
+}
+
+.panier
+{
+    display: flex;
+    flex-direction: row;
+}
+.sectionPanier
+{
+    margin-right: 10px;
+}
+.cadie
+{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.qtePanier, .totalPanier
+{
+    text-align: center;
+}
+h3
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(148,204,85);
+}
+/* Bandeau de session */
+
+.session
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(60,68,81);
+    text-align: center;
+    color: white;
+}
+.userSession
+{
+    
+    text-decoration: none;
+    color: rgb(148,204,85);
+}
+.userSession:hover
+{
+    color: black;
+}
+/* Bandeau catégorie */
+.bandeauCate
+{
+    height: 80px;
+    
+   
+}
+.categories
+{
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+   
+}
+.categories, li 
+{
+    margin-right: 15px; 
+}
+.lienCate
+{
+    text-decoration: none;
+    color: whitesmoke;
+    background: rgb(60,68,81);
+    font-weight: bold;
+    font-style: italic;
+    border: 2px inset rgb(60,68,81);
+}
+.lienCate:hover
+{
+    color: rgb(115,183,63);
+    border: 2px inset rgb(115,183,63)
+}
+
+
+/*** BODY PAGE D'ACCUEIL ****/
+
+#imgArticle
+{
+    border-top: 1px solid rgb(138,133,134); 
+    border-left: 1px solid rgb(138,133,134); 
+    border-right: 1px solid rgb(138,133,134);
+    width: 320px;
+    height: 200px;
+ 
+}
+#nom
+{
+    border-top: 1px solid rgb(138,133,134);
+    border-left: 1px solid rgb(138,133,134); 
+    border-right: 1px solid rgb(138,133,134);
+    color: rgba(0,0,0,0.7);
+    background-color: rgb(237,237,237);
+    height: 40px;
+    font-style: italic;
+}
+#prixArticle
+{
+    color: rgb(115,183,63);
+}
+#showMore
+{
+    height: 40px;
+    border: 1px solid rgb(138,133,134);
+    background-color: rgb(237,237,237);
+}
+#lienShowMore
+{
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+#lienShowMore:hover
+{
+    color: rgb(115,183,63);
+
+}
+#ajoutPanier
+{
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237,237,237);
+    border-top: 1px solid rgb(138,133,134);
+    border-right: 1px solid rgb(138,133,134);
+    border-bottom: 1px solid rgb(138,133,134);
+}
+
+
+/** BODY PAGE SHOW_ARTICLE **/
+
+.titreShowArticle
+{
+    color: rgba(0,0,0,0.7);
+    background-color: rgb(237,237,237);
+    border-top: 1px solid rgb(138,133,134);
+    border-bottom: 1px solid rgb(138,133,134);
+    font-style: italic;
+}
+.prixShowArticle
+{
+    color:rgb(115,183,63);
+}
+.imgShowArticle
+{
+    border-left: 1px solid rgb(138,133,134); 
+    border-right: 1px solid rgb(138,133,134);
+    background-color: rgb(237,237,237);
+    padding-top: 10px;
+    
+}
+
+.descriptionArticle
+{
+    color: rgba(0,0,0,0.7);
+}
+
+
+.liens
+{
+    text-decoration: none;
+}
+
+
+/* BODY PANIER */
+
+tr 
+{
+    
+    text-align: center;
+}
+td
+{
+    border: 1px solid rgba(0,0,0,0.4);
+    align-items: center;
+}
+

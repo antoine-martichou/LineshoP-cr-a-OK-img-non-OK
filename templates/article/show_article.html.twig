@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LineshoP - {{ article.namearticle }}{% endblock %}
+
+{% block body %}
+       
+        <div class="container bandeauCate">
+            <ul class="categories">
+                <li> <a class="btn btn-sm lienCate" href="{{ path('article') }}" role="button"> All Categories </a> </li>
+            </ul>
+        </div>
+        
+        <div class="container mb-3" id="showArticle">
+            <div class="d-flex flex-column">
+                <div class="w-100 text-center mb-2">
+                    <h1 class="titreShowArticle"> {{ article.namearticle }} (<span class="prixShowArticle">{{ article.price }}€</span>) - {{ article.type }} </h1>
+                </div>
+
+                <div class="w-100 imgShowArticle">
+                    <div class="d-flex justify-content-center" >
+                            <img src="/img/{{ article.image }}"  class="img-fluid"  id="imgArticle">
+                        </div>
+                    <hr>
+                    <div class="text-center">
+                        <p class="descriptionArticle"> 
+                            {{ article.description }} 
+                        </p>
+                        <div class="container text-center">
+                            {% if app.user %}
+                                <a class="btn btn-md lienCate" href="{{ path('panier_add', {'id' : article.idarticle}) }}" role="button">Ajouter au panier</a>
+                            {% else %}
+                                <a class="btn btn-md lienCate" href="{{ path('app_login') }}" role="button">Connectez vous pour commander</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+{% endblock %}
